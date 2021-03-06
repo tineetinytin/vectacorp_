@@ -22,7 +22,7 @@ header {
 
     h2 {
         color: $white;
-        font-weight: 900;
+        font-weight: $font-wt-bold;
         font-size: 2.5em;
         line-height: 0; //line height - 0
         margin-bottom: 70px;
@@ -48,7 +48,7 @@ header {
     h1 {
         color: $white;
         font-size: 2.5em;
-        font-weight: 100;
+        font-weight: $font-wt-light;
         padding-top: 50px;
     }
 }
