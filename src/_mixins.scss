@@ -1,0 +1,72 @@
+@mixin clearfix {
+    clear:both;
+}
+
+@mixin text($size, $color, $weight, $l-height:null, $float:null) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    line-height: $l-height;
+    
+}
+
+@mixin footerText($height:null, $bg:null, $width: 100%) {
+    height: $height;
+    background: $bg;
+    width: $width;
+}
+
+@mixin headerText($size, $color, $weight, $l-height: 0) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    line-height: $l-height;
+}
+
+@mixin navText($width, $height, $bg:null, $p-top:null, $t-align:null, $float: left) {
+    width: $width;
+    height: $height;
+    background: $bg;
+    padding-top: $p-top;
+    text-align: $t-align;
+    float: $float;
+
+}
+
+//2 COLUMN MIXIN
+
+@mixin twoColumn {
+    width: (920px / 2);
+
+}
+
+//MEDIA QUERIES
+
+@mixin break($length) {
+    @media(max-width: $length) {
+        @content;
+    }
+}
+
+@mixin prodTestMedia {
+    width: 46%;
+    margin: 0 2%;
+}
+
+@mixin prodTest2Media {
+    width: 96%;
+    margin: 0 2%;
+    float: none;
+}
+
+@mixin greybarImgMedia {
+    display: none;
+}
+
+@mixin footerMedia {
+    float: none;
+    margin: 0;
+}
+
+
+

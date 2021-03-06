@@ -1,0 +1,17 @@
+# Ignore Mac system files
+.DS_Store
+
+# Ignore node.modules folder
+node_modules
+
+# Ignore gulpfile.js
+gulpfile.js
+
+# Ignore package.json
+package.json
+
+# Ignore package-lock.json
+package-lock.json
+
+
+

@@ -1,0 +1,61 @@
+.greybar {
+    @include footerText(90px, $offWhite);
+    padding-top: 30px;
+    @include clearfix;
+        @include break(459px) {
+            width: 460px;
+        }
+        @include break(459px) {
+            @include greybarImgMedia;
+        }
+    }
+
+
+footer {
+    @include footerText(120px, $darkGray);
+    padding-top: 50px;
+    text-align: center;
+    color: $white;
+    @include break(459px) {
+        text-align: center;
+    }
+
+    p, img {
+        @include break(459px) {
+            @include footerMedia;
+        }
+    }
+}
+
+
+.social-media {
+    margin: 0 auto;
+    width: 165px;
+
+    div {
+        float: left;
+        margin-right: 5px;
+
+        &.one {
+            background: url('#{$path-img}/social-media.png') 0 0;
+        }
+
+        &.two {
+            background: url('#{$path-img}/social-media.png') -38px 0;
+        }
+
+        &.three {
+            background: url('#{$path-img}/social-media.png') -76px 0;
+        }
+        &.four {
+            background: url('#{$path-img}/social-media.png') -114px 0;
+        }
+    }
+
+    a {
+        display: block;
+        width: 36px;
+        height: 36px;
+        text-indent: -9999px;
+    }
+}

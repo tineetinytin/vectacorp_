@@ -1,0 +1,75 @@
+
+
+
+#headline {
+    @include footerText(130px, $lightOrange);
+    text-align: center;
+    margin: 0 auto;
+
+    h1 {
+        @include text(2.5em, $white, 100);
+        padding-top: 50px;
+        @include break(767px) {
+            font-size: 2em;
+            padding-top: 50px;
+        }
+        @include break(459px) {
+            font-size: 1.5em;
+            padding-top: 30px;
+        }
+    }
+}
+
+#content {
+    width: 940px;
+    margin: 20px auto;
+    @include break(959px) {
+        width: inherit;
+    }
+    
+    h3 {
+        @include text(2em, $lightGray, 400);
+        @include break(459px) {
+            font-size: 1.6em;
+        }
+    }
+
+    #products {
+        @include twoColumn;
+        float: left;
+        @include break(959px) {
+            @include prodTestMedia;
+        }
+        @include break(767px) {
+            @include prodTest2Media;
+        }
+
+        img {
+            float: left;
+            margin-right: 20px;
+            @include break(459px) {
+                @include greybarImgMedia;
+            }
+        }
+
+        article {
+            margin-bottom: 40px;
+        }
+
+        h4 {
+            line-height: 1em;
+        }
+
+    }
+
+    #testimonials {
+        @include twoColumn;
+        float: right;
+        @include break(959px) {
+            @include prodTestMedia;
+        }
+        @include break(767px) {
+            @include prodTest2Media;
+        }
+    }
+}
